@@ -1,3 +1,15 @@
+a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+a:hover {
+    color: white;
+    background-color: black;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -7,6 +19,9 @@ body {
 
 header {
     width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 main {
@@ -20,19 +35,30 @@ footer {
 section {
     margin: 2rem;
     border: dotted 1px black;
+    background-color: cornsilk;
 }
 
+section:nth-child(even){
+    background-color: lightblue;
+}
+
+section h2 {
+    text-align: center;
+}
 
 article {
     display: flex;
+    margin: .5rem;
 }
 
-article:nth-child(even){
+article:nth-child(odd){
     flex-direction: row-reverse;
 }
 
 article img {
     width: 200px;
+    border-radius: 1rem;
+    margin: 1rem;
 }
 
 article h2 {
