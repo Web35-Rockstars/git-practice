@@ -1,2 +1,40 @@
-body{
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+header {
+    width: 80%;
+}
+
+main {
+    width: 80%;
+}
+
+footer {
+    width: 80%;
+}
+
+section {
+    margin: 2rem;
+    border: dotted 1px black;
+}
+
+
+article {
+    display: flex;
+}
+
+article:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+article img {
+    width: 200px;
+}
+
+article h2 {
+    margin: 1rem
 }
